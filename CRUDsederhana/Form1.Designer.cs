@@ -82,6 +82,7 @@
             this.TELEPHONE.Size = new System.Drawing.Size(105, 20);
             this.TELEPHONE.TabIndex = 3;
             this.TELEPHONE.Text = "TELEPHONE";
+            this.TELEPHONE.Click += new System.EventHandler(this.TELEPHONE_Click);
             // 
             // ALAMAT
             // 
@@ -135,6 +136,7 @@
             this.TAMBAH.TabIndex = 10;
             this.TAMBAH.Text = "Tambah";
             this.TAMBAH.UseVisualStyleBackColor = true;
+            this.TAMBAH.Click += new System.EventHandler(this.TAMBAH_Click);
             // 
             // HAPUS
             // 
