@@ -25,10 +25,12 @@ namespace CRUDsederhana
             using (MySqlConnection conn = new MySqlConnection())
             {
                 conn.Open();
-                string query = "SELECT * FROM Mahasiswa";
+                string query = "SELECT NIM, Nama, Email, Telpon, Alamat FROM Mahasiswa";
                 MySqlDataAdapter da = new MySqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
+
+                dgvMahasiswa.AutoGenerateColumns = true;
                 dgvMahasiswa.DataSource = dt;
             }
         }
